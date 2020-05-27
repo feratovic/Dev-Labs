@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Form Order</title>
+</head>
+<body>
+    <h1>Software Order Form</h1>
+    <form style="width: 40%;">
+        <fieldset>
+        <legend>License details</legend> 
+       
+        <ul>
+            <li><label for="email">Email address </label><input id="email" type="text" required placeholder="example@mail.com"></li>
+            <li><label for="website">Website </label><input id="website" type="text" required placeholder="http://www.example.com/"></li>
+            <li><label for="numOfLicenses">Number of license </label><input id="numOfLicenses" type="text" required placeholder="How mamy to buy (1-10)"></li>
+        </ul>
+
+    </fieldset>
+    <fieldset>
+        <legend>Billing details</legend>
+        <ul>
+            <li><label for="name">Name </label><input id="name" type="text" required placeholder="First Last"></li>
+            <li><label for="address">Address </label><textarea id="address"cols="21" rows="3" placeholder="House number, street, city, state"></textarea></li>
+            <li><label for="postalCode">Postal code </label><input id="postalCode" type="text" required placeholder="Post code or zip code"></li>
+            <li><label for="options">Country</label> <select name="options" id="options">
+                <option value="Austria">Austria</option>
+                <option value="Montenegro" selected>Montenegro</option>
+                <option value="BiH">BiH</option>
+                <option value="Turkey">Turkey</option>
+                <option value="USA">USA</option>
+            </select></li>
+            <li><label for="phone">Phone (optional) </label><input id="phone" type="text" placeholder="Include country perfix, e.g."></li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment details</legend>
+        <ul>
+            <li><label for="cardNumber">Card number </label><input id="cardNumber" type="text" required placeholder="As shown on the fron of your card"></li>
+            <li><label for="cvvCode">CVV code </label><input id="cvvCode" type="text" required placeholder="3- digit number on back of the card"></li>
+            <li><label for="expiryDate">Expiry date </label><input id="expiryDate" type="text" required placeholder="YYYY-MM"></li>
+        </ul>
+    </fieldset>
+    <br>
+    <input type="button" name="button" value="Place you order" style="border-radius: 20px;padding: 5px;">
+    </form>
+</body>
+</html>
